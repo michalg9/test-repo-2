@@ -5,6 +5,12 @@ resource "random_password" "password" {
   override_special = "_%@"
 }
 
+resource "random_password" "password2" {
+  length           = 22
+  special          = true
+  override_special = "_%@"
+}
+
 
 module "pet-module" {
   source  = "spacelift.io/michalg9/pet-module/default"
