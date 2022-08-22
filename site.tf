@@ -23,6 +23,8 @@ data "template_file" "index" {
 <body>
         <h1>Just generated a new env named after a pet: ${module.pet-module.pet_name}</h1>
 
+        <h2>Just a change for the sake of demo here here</h2>
+
         <img alt="hello" src="https://cataas.com/cat/says/Hello%20from%20${module.pet-module.pet_name}" /> 
 </body>
 
